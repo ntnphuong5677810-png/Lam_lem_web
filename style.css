@@ -4,7 +4,7 @@
   --clr-ink: #241e16;           
   --clr-muted: #6f665a;         
   --clr-accent: #e0742d;        
-  --clr-page: #fdfbf7;          
+  --clr-page: #F3EADB;          
   --clr-beige-deep: #f5f0e6;    
   --clr-beige-card: #fdf8f3;    
   --clr-star: #e8a33d;         
@@ -170,7 +170,7 @@ body {
 }
 
 .testi {
-  background: var(--clr-page);
+  background: #fff;
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
 }
 
@@ -239,9 +239,10 @@ body {
 }
 
 .testi__author strong {
+  color: #3B2A20;
   display: block;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .testi__author-role {
