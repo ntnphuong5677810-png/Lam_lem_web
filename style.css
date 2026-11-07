@@ -1,41 +1,26 @@
-/* ============================================================
-   LAM LEM CERAMICS — Section FAQ "Giải đáp băn khoăn"
-   Vanilla CSS · Responsive · Accordion 1 câu mở 1 lần
-   ============================================================ */
-
-/* ------------------------------------------------------------
-   BỘ MÀU & BIẾN CHUNG
-   ✏️ Chỉnh các giá trị tại đây cho khớp màu chính xác trong Figma
-   ------------------------------------------------------------ */
 :root {
-  --clr-bg: #f6f1e9;            /* Nền be/cream — thẻ testimonial + nền FAQ */
-  --clr-card: #ffffff;          /* Nền thẻ trắng */
-  --clr-ink: #241e16;           /* Chữ đen chính (tiêu đề, câu hỏi) */
-  --clr-muted: #6f665a;         /* Chữ xám phần trả lời */
-  --clr-accent: #e0742d;        /* Cam — nhãn eyebrow + icon khi mở */
-  --clr-page: #fdfbf7;          /* Nền trắng ngà chung của trang */
-  --clr-beige-deep: #f5f0e6;    /* Nền be — khu liên hệ & ghé xưởng (theo Figma) */
-  --clr-beige-card: #fdf8f3;    /* Nền thẻ liên hệ (be nhạt hơn nền) */
-  --clr-star: #e8a33d;          /* Vàng sao đánh giá */
-  --clr-accent-soft: rgba(224, 116, 45, 0.12); /* Nền tròn icon cam nhạt */
-  --clr-footer: #2d241b;        /* Nền nâu đậm footer */
-  --clr-btn: #c06a4a;           /* Nút gửi form — terracotta theo Figma */
+  --clr-bg: #f6f1e9;            
+  --clr-card: #ffffff;          
+  --clr-ink: #241e16;           
+  --clr-muted: #6f665a;         
+  --clr-accent: #e0742d;        
+  --clr-page: #fdfbf7;          
+  --clr-beige-deep: #f5f0e6;    
+  --clr-beige-card: #fdf8f3;    
+  --clr-star: #e8a33d;         
+  --clr-accent-soft: rgba(224, 116, 45, 0.12); 
+  --clr-footer: #2C1E15;        
+  --clr-btn: #c06a4a;          
   --clr-btn-hover: #a85a3d;
-
-  --font-serif: "Lora", Georgia, "Times New Roman", serif;   /* Tiêu đề + câu hỏi */
-  --font-sans: "Be Vietnam Pro", system-ui, -apple-system, sans-serif; /* Nội dung */
-
-  --radius: 18px;               /* Bo góc thẻ */
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;   
+  --font-sans: "Be Vietnam Pro", system-ui, -apple-system, sans-serif; 
+  --radius: 18px;              
   --shadow-sm: 0 2px 10px rgba(36, 30, 22, 0.05);
   --shadow-lift: 0 14px 30px rgba(36, 30, 22, 0.12);
 }
 
-/* ------------------------------------------------------------
-   RESET TỐI THIỂU
-   ------------------------------------------------------------ */
-*,
-*::before,
-*::after {
+
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -49,26 +34,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ------------------------------------------------------------
-   SECTION FAQ
-   ------------------------------------------------------------ */
 .faq {
-  background: var(--clr-page); /* theo Figma: nền trắng, thẻ màu be */
+  background: var(--clr-page);
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
 }
 
-.faq__container {
-  max-width: 860px;
+.wrap_information {
+  max-width: 1200px;
   margin-inline: auto;
 }
 
-/* ---- Container chung (các section rộng hơn FAQ) ---- */
 .container {
   max-width: 1120px;
   margin-inline: auto;
 }
 
-/* ---- Tiêu đề section (dùng chung cho mọi section) — theo Figma: căn trái ---- */
 .sec-head {
   text-align: left;
   margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
@@ -91,23 +71,18 @@ body {
   line-height: 1.3;
 }
 
-/* ------------------------------------------------------------
-   DANH SÁCH THẺ CÂU HỎI
-   ------------------------------------------------------------ */
 .faq__list {
   list-style: none;
   display: grid;
   gap: 1rem;
 }
 
-/* ---- Thẻ (card) — theo Figma: nền trắng + khung viền mảnh, tĩnh không hiệu ứng ---- */
 .faq__item {
   background: var(--clr-card);
   border: 1px solid #e2d9c6;
   border-radius: var(--radius);
 }
 
-/* ---- Dòng câu hỏi <summary> (bấm để mở/đóng) — thuần CSS, không JS ---- */
 .faq__q {
   display: flex;
   align-items: center;
@@ -115,15 +90,12 @@ body {
   gap: 1rem;
   width: 100%;
   padding: 1.4rem 1.75rem;
-
   background: none;
   border-radius: var(--radius);
   cursor: pointer;
   text-align: left;
   font: inherit;
   color: inherit;
-
-  /* Ẩn mũi tên mặc định của <details> */
   list-style: none;
 }
 
@@ -138,13 +110,11 @@ body {
   line-height: 1.4;
 }
 
-/* Vòng focus rõ ràng cho người dùng bàn phím */
 .faq__q:focus-visible {
   outline: 2px solid var(--clr-accent);
   outline-offset: -4px;
 }
 
-/* ---- Icon "+" (xoay 45° thành "×" khi mở — đổi ngay lập tức) ---- */
 .faq__icon {
   position: relative;
   flex-shrink: 0;
@@ -178,18 +148,13 @@ body {
   background: var(--clr-accent);
 }
 
-/* ------------------------------------------------------------
-   PHẦN TRẢ LỜI — mở/đóng tức thì, không hiệu ứng (giống Figma)
-   Kỹ thuật: grid-template-rows 0fr → 1fr, trình duyệt tự tính
-   chiều cao, không cần JS.
-   ------------------------------------------------------------ */
 .faq__panel {
   display: grid;
   grid-template-rows: 0fr;
 }
 
 .faq__panel-inner {
-  overflow: hidden;   /* bắt buộc: cắt nội dung khi hàng = 0fr */
+  overflow: hidden; 
   min-height: 0;
 }
 
@@ -204,9 +169,6 @@ body {
   color: var(--clr-muted);
 }
 
-/* ============================================================
-   SECTION: KHÁCH HÀNG NÓI GÌ (Testimonials)
-   ============================================================ */
 .testi {
   background: var(--clr-page);
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
@@ -224,7 +186,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background: #f9f6f0; /* theo Figma: be rất nhạt */
+  background: #f9f6f0;
   border-radius: var(--radius);
   padding: 1.75rem;
 }
@@ -243,7 +205,6 @@ body {
   color: #453d31;
 }
 
-/* ---- Hàng đầu thẻ: avatar + tên (trái), 5 sao dạt về lề phải ---- */
 .testi__author {
   display: flex;
   align-items: center;
@@ -264,7 +225,6 @@ body {
   gap: 2px;
 }
 
-/* Điểm đánh giá: số điểm sát trước dãy sao (kiểu "5,0 ★★★★★") */
 .testi__rating {
   display: flex;
   align-items: center;
@@ -289,9 +249,6 @@ body {
   color: var(--clr-muted);
 }
 
-/* ============================================================
-   SECTION: BƯỚC TIẾP THEO (Liên hệ)
-   ============================================================ */
 .contact {
   background: var(--clr-beige-deep);
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
@@ -351,9 +308,6 @@ body {
   color: var(--clr-accent);
 }
 
-/* ============================================================
-   SECTION: GHÉ XƯỞNG + GỬI YÊU CẦU
-   ============================================================ */
 .visit {
   background: var(--clr-beige-deep);
   padding: 0 1.5rem clamp(4rem, 9vw, 7rem);
@@ -366,7 +320,6 @@ body {
   align-items: start;
 }
 
-/* ---- Cột trái: thông tin xưởng ---- */
 .visit__title {
   font-family: var(--font-serif);
   font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2rem);
@@ -385,7 +338,6 @@ body {
   margin-bottom: 1.25rem;
 }
 
-/* Khung ảnh xưởng — theo Figma là vùng trống màu be (#E8DCC8), thay bằng <img> thật */
 .visit__media-placeholder {
   aspect-ratio: 16 / 9;
   background: #e8dcc8;
@@ -423,7 +375,6 @@ body {
   gap: 0.6rem;
 }
 
-/* Theo Figma: 4 nút vuông nền cam đặc (#C75B39), icon trắng — tĩnh, không hiệu ứng */
 .social-btn {
   display: grid;
   place-items: center;
@@ -443,7 +394,6 @@ body {
   height: 1.15rem;
 }
 
-/* ---- Cột phải: thẻ form ---- */
 .visit__form-card {
   background: var(--clr-card);
   border-radius: var(--radius);
@@ -484,8 +434,6 @@ body {
   margin-bottom: 0.4rem;
 }
 
-/* Nhãn trong các hàng 2 cột: giữ vùng cao đều 2 dòng (2 × line-height 1.6)
-   để các input luôn thẳng hàng ngang nhau kể cả khi nhãn bị xuống dòng */
 .form-row .form-field label {
   display: flex;
   flex-wrap: wrap;
@@ -512,7 +460,6 @@ body {
   border-radius: 10px;
 }
 
-/* Mũi tên tùy chỉnh cho <select> */
 .form-field select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236f665a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
@@ -539,7 +486,6 @@ body {
   color: #b3a892;
 }
 
-/* Nút gửi là <label> bấm vào checkbox ẩn — chỉ "sáng" khi form đã hợp lệ */
 .visit__submit {
   display: inline-block;
   text-align: center;
@@ -560,15 +506,12 @@ body {
   background: var(--clr-btn-hover);
 }
 
-/* Chưa điền đủ các ô bắt buộc → nút mờ, chưa bấm được.
-   Sau khi đã gửi (checkbox được chọn) → nút khóa lại. */
 .visit__form:invalid .visit__submit,
 .visit__sent-toggle:checked ~ .visit__submit {
   pointer-events: none;
   opacity: 0.55;
 }
 
-/* Báo ô bắt buộc còn lỗi sau khi người dùng đã chạm vào */
 .form-field input:user-invalid,
 .form-field select:user-invalid,
 .form-field textarea:user-invalid {
@@ -581,7 +524,6 @@ body {
   text-align: center;
 }
 
-/* Hộp xác nhận sau khi gửi — thuần CSS: hiện khi checkbox #visit-sent được chọn */
 .visit__confirm {
   display: none;
   background: var(--clr-bg);
@@ -604,9 +546,6 @@ body {
   line-height: 1.7;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   background: var(--clr-footer);
   color: #e9e0d2;
@@ -614,19 +553,20 @@ body {
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1.35fr;
   gap: clamp(2rem, 4vw, 3.5rem);
   padding: clamp(3rem, 6vw, 4.5rem) 1.5rem 2.5rem;
 }
 
-/* Logo theo Figma: icon tròn cam (#B4552D) với vòng xoắn kép kem (#FFF4E8),
-   chữ "Lấm Lem" trắng serif + "CERAMICS STUDIO" be nhạt phía dưới, canh trái thẳng hàng */
+.footer_addr {
+  white-space: nowrap;
+}
+
 .footer__logo {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
-  margin-bottom: 1.25rem;
 }
 
 .footer__logo-icon {
@@ -643,12 +583,13 @@ body {
 }
 
 .footer__logo-mark {
-  display: block;
-  color: #fff;
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.35rem;
-  line-height: 1.2;
+    width: 110px;
+    height: 24px;
+    color: #fff;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
 }
 
 .footer__logo-sub {
@@ -661,11 +602,20 @@ body {
   text-transform: uppercase;
   margin-top: 0.3rem;
 }
+.footer__brand{
+    width: 384.16px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
 .footer__brand-desc {
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: #b7a893;
+    width: 330px;
+    height: 72px;
+    font-size: 14.5px;
+    line-height: 165%;
+    color: #D9C4AE;
 }
 
 .footer__heading {
@@ -681,11 +631,11 @@ body {
   display: grid;
   gap: 0.65rem;
   font-size: 0.9rem;
-  color: #f6efe3; /* theo Figma: chữ trắng — dòng địa chỉ kế thừa màu này */
+  color: #D9C4AE; 
 }
 
 .footer__links a {
-  color: #f6efe3;
+  color: #D9C4AE;
   text-decoration: none;
 }
 
@@ -717,9 +667,6 @@ body {
   color: var(--clr-accent);
 }
 
-/* ------------------------------------------------------------
-   RESPONSIVE — MOBILE
-   ------------------------------------------------------------ */
 @media (max-width: 640px) {
   .faq {
     padding: 3.5rem 1rem;

@@ -6,28 +6,21 @@
   <title>Lam Lem Ceramics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet"/>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main>
     <section class="faq" id="faq" aria-labelledby="faq-title">
-      <div class="faq__container">
-
-        <!-- Tiêu đề section -->
+      <div class="wrap_information">
         <header class="sec-head reveal">
           <p class="sec-eyebrow">Giải đáp băn khoăn</p>
           <h2 class="sec-title" id="faq-title">Trước khi quyết định, bạn có thể đang thắc mắc</h2>
         </header>
 
-        <!-- Danh sách câu hỏi — thuần CSS: <details name="faq"> tự đảm bảo mỗi lần chỉ mở 1 câu -->
         <ul class="faq__list">
 
-          <!-- ===== Câu hỏi 1 ===== -->
           <li class="faq__item reveal">
             <details class="faq__details" name="faq">
               <summary class="faq__q">
@@ -45,7 +38,6 @@
             </details>
           </li>
 
-          <!-- ===== Câu hỏi 2 ===== -->
           <li class="faq__item reveal">
             <details class="faq__details" name="faq">
               <summary class="faq__q">
@@ -62,8 +54,6 @@
               </div>
             </details>
           </li>
-
-          <!-- ===== Câu hỏi 3 ===== -->
           <li class="faq__item reveal">
             <details class="faq__details" name="faq">
               <summary class="faq__q">
@@ -81,7 +71,6 @@
             </details>
           </li>
 
-          <!-- ===== Câu hỏi 4 ===== -->
           <li class="faq__item reveal">
             <details class="faq__details" name="faq">
               <summary class="faq__q">
@@ -99,7 +88,6 @@
             </details>
           </li>
 
-          <!-- ===== Câu hỏi 5 ===== -->
           <li class="faq__item reveal">
             <details class="faq__details" name="faq">
               <summary class="faq__q">
@@ -121,22 +109,14 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION: KHÁCH HÀNG NÓI GÌ (Testimonials)
-         ✏️ Nội dung dựng từ ảnh chụp Figma (06:05) — đối chiếu lại bản copy gốc.
-         ============================================================ -->
     <section class="testi" id="testimonials" aria-labelledby="testi-title">
       <div class="container">
-
-        <!-- Tiêu đề section -->
         <header class="sec-head reveal">
           <p class="sec-eyebrow">Khách hàng nói gì</p>
           <h2 class="sec-title" id="testi-title">Những chiếc gốm đã tìm được chủ</h2>
         </header>
 
-        <!-- 3 thẻ đánh giá của khách hàng -->
         <ul class="testi__list">
-
           <li class="testi__item reveal">
             <figure class="testi__card">
               <figcaption class="testi__author">
@@ -205,25 +185,16 @@
               </blockquote>
             </figure>
           </li>
-
         </ul>
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION: BƯỚC TIẾP THEO (Liên hệ)
-         ✏️ Số điện thoại/email trong ảnh là số mẫu — thay bằng thông tin thật.
-         ============================================================ -->
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
-
-        <!-- Tiêu đề section -->
         <header class="sec-head reveal">
           <p class="sec-eyebrow">Bước tiếp theo</p>
           <h2 class="sec-title" id="contact-title">Để lại nhu cầu, xưởng tư vấn trong ngày</h2>
         </header>
-
-        <!-- 3 kênh liên hệ -->
         <ul class="contact__list">
 
           <li class="contact__item reveal">
@@ -260,16 +231,9 @@
             <h3 class="contact__label">Email</h3>
             <p class="contact__value"><a href="mailto:xinchao@lamlem.vn">xinchao@lamlem.vn</a></p>
           </li>
-
         </ul>
       </div>
     </section>
-
-    <!-- ============================================================
-         SECTION: GHÉ XƯỞNG + GỬI YÊU CẦU
-         ✏️ Ô ảnh xưởng đang là placeholder — thay bằng ảnh thật.
-            Form mô phỏng gửi bằng CSS (hộp xác nhận) — cần nối backend thật.
-         ============================================================ -->
     <section class="visit" id="visit" aria-labelledby="visit-title">
       <div class="container visit__grid">
 
@@ -280,8 +244,6 @@
             Ghé xưởng để tận tay cầm thử gốm, xem lò nung và chọn men tận mắt –
             xưởng có trà mời khách.
           </p>
-
-          <!-- ✏️ Khung ảnh xưởng theo Figma (vùng trống màu be) — thay bằng <img> thật khi có ảnh -->
           <figure class="visit__media" aria-label="Ảnh xưởng gốm">
             <div class="visit__media-placeholder"></div>
           </figure>
@@ -328,8 +290,6 @@
             </ul>
           </div>
         </div>
-
-        <!-- Cột phải: form gửi yêu cầu -->
         <div class="visit__form-card reveal">
           <h2 class="visit__form-title">Gửi yêu cầu cho xưởng</h2>
           <p class="visit__form-sub">
@@ -338,7 +298,6 @@
           </p>
 
           <form class="visit__form" id="visit-form">
-            <!-- Checkbox ẩn điều khiển hộp xác nhận — thuần CSS, không cần JS -->
             <input type="checkbox" id="visit-sent" class="visit__sent-toggle" hidden />
 
             <div class="form-row">
@@ -372,14 +331,10 @@
 
             <div class="form-field">
               <label for="f-note">Ghi chú thêm</label>
-              <textarea id="f-note" name="note" rows="4"
-                        placeholder="Màu men yêu thích, số lượng, ngày cần nhận hàng..."></textarea>
+              <textarea id="f-note" name="note" rows="4" placeholder="Màu men yêu thích, số lượng, ngày cần nhận hàng..."></textarea>
             </div>
-
             <label class="visit__submit" for="visit-sent">Gửi yêu cầu tư vấn</label>
             <p class="visit__privacy">Thông tin chỉ dùng để liên hệ tư vấn và được bảo mật tuyệt đối.</p>
-
-            <!-- Hộp xác nhận — mặc định ẩn bằng CSS, hiện khi checkbox #visit-sent được chọn -->
             <div class="visit__confirm" id="visit-confirm">
               <strong>Cảm ơn bạn đã gửi yêu cầu!</strong>
               <p>
@@ -393,47 +348,39 @@
     </section>
   </main>
 
-  <!-- ============================================================
-       FOOTER
-       ✏️ Các link đang là "#" — thay bằng đường dẫn trang thật.
-       ============================================================ -->
   <footer class="footer">
     <div class="container footer__grid reveal">
+        <div class="footer__brand">
+            <a class="footer__logo" href="#" aria-label="Lấm Lem Ceramics Studio">
+            <svg class="footer__logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+                <rect width="42" height="42" rx="21" fill="#B4552D" />
+                <path d="M28.5 21.0002C28.5015 22.7355 27.9013 24.4176 26.8016 25.7599C25.7019 27.1022 24.1708 28.0216 22.4692 28.3615C20.7676 28.7015 19.0007 28.4408 17.4697 27.624C15.9387 26.8072 14.7383 25.4848 14.0731 23.8822C13.4078 22.2795 13.3189 20.4958 13.8214 18.8349C14.3239 17.174 15.3868 15.7387 16.8289 14.7737C18.2711 13.8086 20.0032 13.3735 21.7302 13.5425C23.4572 13.7114 25.0722 14.474 26.3 15.7002" stroke-width="2.1" stroke-linecap="round" stroke="#FFF4E8" />
+                <path d="M24.8 20.9998C24.794 21.8786 24.4836 22.7281 23.9216 23.4038C23.3596 24.0795 22.5808 24.5394 21.7178 24.7054C20.8548 24.8714 19.961 24.7332 19.1884 24.3142C18.4159 23.8952 17.8125 23.2214 17.4809 22.4076C17.1493 21.5937 17.1101 20.6901 17.3699 19.8505C17.6297 19.011 18.1724 18.2874 18.9057 17.8031C19.639 17.3187 20.5176 17.1035 21.3917 17.1941C22.2658 17.2846 23.0816 17.6754 23.7 18.2998" stroke-width="2.1" stroke-linecap="round" stroke="#FFF4E8" />
+                <path d="M21 22.1004C21.6075 22.1004 22.1 21.6079 22.1 21.0004C22.1 20.3929 21.6075 19.9004 21 19.9004C20.3925 19.9004 19.9 20.3929 19.9 21.0004C19.9 21.6079 20.3925 22.1004 21 22.1004Z" fill="#FFF4E8" />
+            </svg>
+            <span class="footer__logo-lockup">
+                <span class="footer__logo-mark">Lấm Lem</span>
+                <span class="footer__logo-sub">CERAMICS STUDIO</span>
+            </span>
+            </a>
+            <p class="footer__brand-desc">
+            Gốm làm bằng tay tại TP. Thủ Đức — mỗi viên gốm là một độc bản,
+            kể câu chuyện của đất, lửa và người thợ.
+            </p>
+        </div>
 
-      <!-- Cột 1: Thương hiệu -->
-      <div class="footer__brand">
-        <a class="footer__logo" href="#" aria-label="Lấm Lem Ceramics Studio">
-          <svg class="footer__logo-icon" viewBox="0 0 42 42" fill="none" aria-hidden="true">
-            <rect width="42" height="42" rx="21" fill="#B4552D" />
-            <path d="M28.5 21.0002C28.5015 22.7355 27.9013 24.4176 26.8016 25.7599C25.7019 27.1022 24.1708 28.0216 22.4692 28.3615C20.7676 28.7015 19.0007 28.4408 17.4697 27.624C15.9387 26.8072 14.7383 25.4848 14.0731 23.8822C13.4078 22.2795 13.3189 20.4958 13.8214 18.8349C14.3239 17.174 15.3868 15.7387 16.8289 14.7737C18.2711 13.8086 20.0032 13.3735 21.7302 13.5425C23.4572 13.7114 25.0722 14.474 26.3 15.7002" stroke-width="2.1" stroke-linecap="round" stroke="#FFF4E8" />
-            <path d="M24.8 20.9998C24.794 21.8786 24.4836 22.7281 23.9216 23.4038C23.3596 24.0795 22.5808 24.5394 21.7178 24.7054C20.8548 24.8714 19.961 24.7332 19.1884 24.3142C18.4159 23.8952 17.8125 23.2214 17.4809 22.4076C17.1493 21.5937 17.1101 20.6901 17.3699 19.8505C17.6297 19.011 18.1724 18.2874 18.9057 17.8031C19.639 17.3187 20.5176 17.1035 21.3917 17.1941C22.2658 17.2846 23.0816 17.6754 23.7 18.2998" stroke-width="2.1" stroke-linecap="round" stroke="#FFF4E8" />
-            <path d="M21 22.1004C21.6075 22.1004 22.1 21.6079 22.1 21.0004C22.1 20.3929 21.6075 19.9004 21 19.9004C20.3925 19.9004 19.9 20.3929 19.9 21.0004C19.9 21.6079 20.3925 22.1004 21 22.1004Z" fill="#FFF4E8" />
-          </svg>
-          <span class="footer__logo-lockup">
-            <span class="footer__logo-mark">Lấm Lem</span>
-            <span class="footer__logo-sub">CERAMICS STUDIO</span>
-          </span>
-        </a>
-        <p class="footer__brand-desc">
-          Gốm làm bằng tay tại TP. Thủ Đức — mỗi viên gốm là một độc bản,
-          kể câu chuyện của đất, lửa và người thợ.
-        </p>
-      </div>
+        <nav class="footer__col" aria-label="Khám phá">
+            <h3 class="footer__heading">Khám phá</h3>
+            <ul class="footer__links">
+            <li><a href="#">Chất liệu</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Men &amp; phong cách</a></li>
+            <li><a href="#">Quy trình chế tác</a></li>
+            <li><a href="#">Lớp làm gốm</a></li>
+            <li><a href="#faq">Hỏi đáp</a></li>
+            </ul>
+        </nav>
 
-      <!-- Cột 2: Khám phá -->
-      <nav class="footer__col" aria-label="Khám phá">
-        <h3 class="footer__heading">Khám phá</h3>
-        <ul class="footer__links">
-          <li><a href="#">Chất liệu</a></li>
-          <li><a href="#">Sản phẩm</a></li>
-          <li><a href="#">Men &amp; phong cách</a></li>
-          <li><a href="#">Quy trình chế tác</a></li>
-          <li><a href="#">Lớp làm gốm</a></li>
-          <li><a href="#faq">Hỏi đáp</a></li>
-        </ul>
-      </nav>
-
-      <!-- Cột 3: Danh mục -->
       <nav class="footer__col" aria-label="Danh mục">
         <h3 class="footer__heading">Danh mục</h3>
         <ul class="footer__links">
@@ -444,11 +391,10 @@
         </ul>
       </nav>
 
-      <!-- Cột 4: Liên hệ -->
       <div class="footer__col">
         <h3 class="footer__heading">Liên hệ</h3>
         <ul class="footer__links">
-          <li>128 Trần Não, TP. Thủ Đức, TP.HCM</li>
+          <li class="footer_addr">128 Trần Não, TP. Thủ Đức, TP.HCM</li>
           <li><a href="tel:0901234567">0901 234 567</a></li>
           <li><a href="mailto:xinchao@lamlem.vn">xinchao@lamlem.vn</a></li>
         </ul>
@@ -457,7 +403,7 @@
 
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>© 2025 Lâm Lem Ceramics. Mọi sản phẩm đều là độc bản làm bằng tay.</p>
+        <p>© 2026 Lâm Lem Ceramics. Mọi sản phẩm đều là độc bản làm bằng tay.</p>
         <p class="footer__legal">
           <a href="#">Chính sách bảo mật</a> · <a href="#">Điều khoản sử dụng</a>
         </p>
