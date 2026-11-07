@@ -77,7 +77,7 @@ body {
 }
 
 .q-header__left {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .q-header__logo {
@@ -452,7 +452,7 @@ nav a:hover {
 }
 
 .q-page2__card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 .q-page2__tag {
@@ -489,9 +489,9 @@ nav a:hover {
 }
 
 .q-page2__cta {
-    font-size: 15px;
+  font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
 }
 
 .q-page2__cta a {
@@ -499,7 +499,7 @@ nav a:hover {
 }
 
 .q-page2__button2-dark {
-  padding: 10px 9px;
+  padding: 10px 10px;
   border-radius: 999px;
   background-color: var(--clr-ink);
   color: var(--clr-white);
@@ -511,7 +511,7 @@ nav a:hover {
 }
 
 .q-page2__button2-line {
-  padding: 10px 9px;
+  padding: 10px 6px;
   border-radius: 999px;
   border: 1.5px solid var(--clr-accent);
   color: var(--clr-accent);
@@ -813,7 +813,7 @@ nav a:hover {
 }
 
 .faq__q {
-  border: 1px solid #E5D7C6;
+  border: 1px solid #e5d7c6;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -884,7 +884,7 @@ nav a:hover {
 }
 
 .faq__panel-inner {
-  overflow: hidden; 
+  overflow: hidden;
   min-height: 0;
 }
 
@@ -912,7 +912,7 @@ nav a:hover {
 }
 
 .testi__card {
-  border: 1px solid #E5D7C6;
+  border: 1px solid #e5d7c6;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -970,7 +970,7 @@ nav a:hover {
 }
 
 .testi__author strong {
-  color: #3B2A20;
+  color: #3b2a20;
   display: block;
   font-size: 1rem;
   font-weight: 700;
@@ -1325,13 +1325,13 @@ nav a:hover {
 }
 
 .footer__logo-mark {
-    width: 110px;
-    height: 24px;
-    color: #fff;
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
+  width: 110px;
+  height: 24px;
+  color: #fff;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
 }
 
 .footer__logo-sub {
@@ -1344,19 +1344,19 @@ nav a:hover {
   text-transform: uppercase;
   margin-top: 0.3rem;
 }
-.footer__brand{
-    height: 128px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.footer__brand {
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .footer__brand-desc {
-    width: 330px;
-    height: 72px;
-    font-size: 14.5px;
-    line-height: 165%;
-    color: #D9C4AE;
+  width: 330px;
+  height: 72px;
+  font-size: 14.5px;
+  line-height: 165%;
+  color: #d9c4ae;
 }
 
 .footer__heading {
@@ -1372,11 +1372,11 @@ nav a:hover {
   display: grid;
   gap: 0.65rem;
   font-size: 0.9rem;
-  color: #D9C4AE; 
+  color: #d9c4ae;
 }
 
 .footer__links a {
-  color: #D9C4AE;
+  color: #d9c4ae;
   text-decoration: none;
 }
 
@@ -1408,7 +1408,6 @@ nav a:hover {
   color: var(--clr-accent);
 }
 
-
 .back-to-top {
   display: flex;
   justify-content: center;
@@ -1429,6 +1428,32 @@ nav a:hover {
   text-decoration: none;
 }
 
+.back-to-top:hover {
+     background-color: #b4562d77;
+  transition: 0.2s;
+}
+
+.faq__q:hover {
+  background-color: #3b2a2020;
+  transition: 0.2s;
+}
+
+.b-button:hover {
+  background-color: #b4562d;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.b-gu-link:hover {
+  color: #b4562d90;
+  transition: 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #b4562d90;
+  border: #b4562d90;
+  transition: 0.2s;
+}
 
 @media (max-width: 900px) {
   .visit__grid {
@@ -1478,7 +1503,7 @@ nav a:hover {
   }
 
   .q-header__button-a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .q-hero {
@@ -1586,6 +1611,10 @@ nav a:hover {
     padding: 9px 10px;
   }
 
+  .q-page2__cta {
+    flex-direction: column;
+  }
+
   .b-section {
     padding: 56px 20px;
   }
@@ -1689,7 +1718,7 @@ nav a:hover {
   flex-shrink: 0;
 }
 
-@media (min-width: 641px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
   .q-header {
     padding: 10px 60px;
   }
@@ -1703,9 +1732,13 @@ nav a:hover {
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  .q-page2__cta {
+    flex-direction: column;
+  }
 }
 
-@media (min-width: 641px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .q-header {
     padding: 10px 40px;
   }
@@ -1727,10 +1760,18 @@ nav a:hover {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .q-page2__cta {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 900px) {
   .footer_addr {
     white-space: normal;
+  }
+
+  .q-page2__cta {
+    flex-direction: column;
   }
 }
