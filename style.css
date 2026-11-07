@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Q-BODY {
+  font-family: "Be Vietnam Pro", "Fraunces";
+  font-size: 16px;
+  color: #7d6a5c;
+}
+
+.Q-CONTAINER {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 130px;
+  width: 100%;
+  top: 0px;
+  background-color: #ffffffe3;
+}
+
+.Q-HEADER__left {
+  display: flex;
+  gap: 10px;
+}
+
+.Q-HEADER__logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #b4552d;
+}
+
+.Q-HEADER__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.Q-HEADER__text p {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 24px;
+  color: #3b2a20;
+}
+
+.Q-HEADER__text span {
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+
+.Q-HEADER__right {
+  display: flex;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: #3b2a20;
+}
+
+nav a:hover {
+    color: #3b2a209a;
+}
+
+.Q-HEADER__cta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Q-HEADER__button {
+  width: 125px;
+  height: 47px;
+  border-radius: 999px;
+  background-color: #b4552d;
+}
+
+.Q-HEADER__button:hover {
+  background-color: #b4562d6a;
+  transition: 0.2s;
+}
+
+.Q-HEADER__button-a {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Q-HEADER__shop {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #e5d7c6;
+}
+
+.Q-HEADER__shop img {
+  display: flex;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+}
+
+.Q-HEADER__shop:hover {
+    background-color: #3b2a204c;
+    transition: 0.2s;
+}
+
+.Q-HERO {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background:
+    linear-gradient(to right, #e5d7c63a, #e5d7c63a, transparent),
+    url("pic/hero.jpg") center / cover no-repeat;
+}
+
+.Q-HERO__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 130px;
+  gap: 20px;
+}
+
+.Q-HERO__text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Q-HERO__text span {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #b4552d;
+}
+
+.Q-HERO__text h1 {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 108%;
+  color: #3b2a20;
+}
+
+.Q-HERO__text i {
+  color: #b4552d;
+}
+
+.Q-HERO__text p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 165%;
+}
+
+.Q-HERO__cta {
+  display: flex;
+  gap: 15px;
+}
+
+.Q-HERO__button {
+  width: 207px;
+  height: 47px;
+  border-radius: 999px;
+}
+
+.Q-HERO__button-color:hover {
+  background-color: #b4562d6a;
+  transition: 0.2s;
+}
+
+.Q-HERO__button-line:hover {
+  background-color: #b4552d;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+
+.Q-HERO__button-a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.Q-HERO__button-color {
+  color: #ffffff;
+  background-color: #b4552d;
+}
+
+.Q-HERO__button-line {
+  color: #b4552d;
+  border: 2px solid #b4552d;
+}
+
+.Q-PAGE1 {
+  display: flex;
+  padding: 84px 130px;
+  width: 100%;
+  gap: 56px;
+  background-color: #ffffff;
+}
+
+.Q-PAGE1 img {
+  width: 45%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 20px;
+}
+
+.Q-PAGE1__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.Q-PAGE1__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.Q-PAGE1__top span {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #b4552d;
+}
+
+.Q-PAGE1__top h2 {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 36px;
+  color: #3b2a20;
+}
+
+.Q-PAGE1__top p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.Q-PAGE1__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px 26px;
+  border-radius: 16px;
+  background-color: #faf5ee;
+}
+
+.Q-PAGE1__bottom h3 {
+  font-family: Fraunces;
+  font-weight: 600;
+  font-size: 20px;
+  color: #b4552d;
+}
+
+.Q-PAGE1__bottom p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 165%;
+}
+
