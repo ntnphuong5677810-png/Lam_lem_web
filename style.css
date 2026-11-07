@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 * {
@@ -30,6 +31,34 @@
   --radius: 18px;
   --shadow-sm: 0 2px 10px rgba(59, 42, 32, 0.05);
   --shadow-lift: 0 14px 30px rgba(59, 42, 32, 0.12);
+=======
+:root {
+  --clr-bg: #f6f1e9;            
+  --clr-card: #ffffff;          
+  --clr-ink: #241e16;           
+  --clr-muted: #6f665a;         
+  --clr-accent: #e0742d;        
+  --clr-page: #F3EADB;          
+  --clr-beige-deep: #f5f0e6;    
+  --clr-beige-card: #fdf8f3;    
+  --clr-star: #e8a33d;         
+  --clr-accent-soft: rgba(224, 116, 45, 0.12); 
+  --clr-footer: #2C1E15;        
+  --clr-btn: #c06a4a;          
+  --clr-btn-hover: #a85a3d;
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;   
+  --font-sans: "Be Vietnam Pro", system-ui, -apple-system, sans-serif; 
+  --radius: 18px;              
+  --shadow-sm: 0 2px 10px rgba(36, 30, 22, 0.05);
+  --shadow-lift: 0 14px 30px rgba(36, 30, 22, 0.12);
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+>>>>>>> e3401c6cb8692fe6b0c29e2a358e17bb6fe5cadb
 }
 
 body {
@@ -40,6 +69,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+<<<<<<< HEAD
 .q-body {
   font-family: "Be Vietnam Pro", "Fraunces";
   font-size: 16px;
@@ -757,6 +787,8 @@ nav a:hover {
   aspect-ratio: 4 / 3;
 }
 
+=======
+>>>>>>> e3401c6cb8692fe6b0c29e2a358e17bb6fe5cadb
 .faq {
   background: var(--clr-page);
   padding: clamp(4rem, 9vw, 7rem) 1.5rem;
@@ -1393,6 +1425,7 @@ nav a:hover {
   color: var(--clr-accent);
 }
 
+<<<<<<< HEAD
 
 .back-to-top {
   display: flex;
@@ -1415,6 +1448,44 @@ nav a:hover {
 }
 
 
+=======
+@media (max-width: 640px) {
+  .faq {
+    padding: 3.5rem 1rem;
+  }
+
+  .faq__q {
+    padding: 1.15rem 1.25rem;
+  }
+
+  .faq__a {
+    padding: 0 1.25rem 1.25rem;
+    font-size: 0.93rem;
+  }
+
+  .faq__list {
+    gap: 0.85rem;
+  }
+
+  .testi__card {
+    padding: 1.5rem;
+  }
+
+  .contact__item {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Tablet: form xuống dưới, footer 2 cột ---- */
+>>>>>>> e3401c6cb8692fe6b0c29e2a358e17bb6fe5cadb
 @media (max-width: 900px) {
   .visit__grid {
     grid-template-columns: 1fr;
@@ -1423,6 +1494,7 @@ nav a:hover {
   .footer__grid {
     grid-template-columns: 1fr 1fr;
   }
+<<<<<<< HEAD
 }
 
 @media (max-width: 640px) {
@@ -1631,4 +1703,6 @@ nav a:hover {
     bottom: 20px;
     right: 20px;
   }
+=======
+>>>>>>> e3401c6cb8692fe6b0c29e2a358e17bb6fe5cadb
 }
