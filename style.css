@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .Q-BODY {
@@ -286,7 +287,6 @@ nav a:hover {
   line-height: 165%;
 }
 
-/* MỚI THÊM VÀO  */
 .Q-PAGE2 {
   display: flex;
   flex-direction: column;
@@ -458,4 +458,3 @@ nav a:hover {
     color: #ffffff;
     transition: 0.2s;
 }
-/* XONGGGGGGGGGGGGGGGGGGGGGGGGGGGG */
