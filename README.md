@@ -22,3 +22,4 @@ Landing page một trang (one-page) giới thiệu xưởng gốm thủ công **
 | 11 | Đặt lịch / Liên hệ | 3 thẻ thông tin (địa chỉ, hotline–Zalo, email), bản đồ, giờ mở cửa, mạng xã hội + biểu mẫu gửi yêu cầu | Chốt chuyển đổi: khách gửi nhu cầu để xưởng tư vấn trong ngày |
 | 12 | Footer | Thông tin xưởng, liên kết, bản quyền | Kết trang, thông tin pháp lý cơ bản |
 | — | Nút "Gọi tư vấn" (nổi) | Nút gọi điện cố định góc màn hình | Khách gọi ngay bất cứ lúc nào khi lướt trang |
+link figma: https://www.figma.com/design/O5OMu1gPZRz6RP9Q4xLj1D/L%E1%BA%A5m-Lem-Ceramics-%E2%80%94-Website-Design?node-id=0-1&p=f&t=HRQTKhFaMI38gAVB-0
