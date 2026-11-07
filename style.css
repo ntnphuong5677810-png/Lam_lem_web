@@ -354,18 +354,18 @@ nav a:hover {
   color: #ffffff;
 }
 
-#loc-tatca:checked ~ .Q-PAGE2__filter [for="loc-tatca"],
-#loc-anuong:checked ~ .Q-PAGE2__filter [for="loc-anuong"],
-#loc-trangtri:checked ~ .Q-PAGE2__filter [for="loc-trangtri"],
-#loc-quatang:checked ~ .Q-PAGE2__filter [for="loc-quatang"] {
+.Q-PAGE2:has(#loc-tatca:checked) [for="loc-tatca"],
+.Q-PAGE2:has(#loc-anuong:checked) [for="loc-anuong"],
+.Q-PAGE2:has(#loc-trangtri:checked) [for="loc-trangtri"],
+.Q-PAGE2:has(#loc-quatang:checked) [for="loc-quatang"] {
   border-color: #b4552d;
   color: #ffffff;
   background-color: #b4552d;
 }
 
-#loc-anuong:checked ~ .Q-PAGE2__grid .Q-PAGE2__card:not(.anuong),
-#loc-trangtri:checked ~ .Q-PAGE2__grid .Q-PAGE2__card:not(.trangtri),
-#loc-quatang:checked ~ .Q-PAGE2__grid .Q-PAGE2__card:not(.quatang) {
+.Q-PAGE2:has(#loc-anuong:checked) .Q-PAGE2__card:not(.anuong),
+.Q-PAGE2:has(#loc-trangtri:checked) .Q-PAGE2__card:not(.trangtri),
+.Q-PAGE2:has(#loc-quatang:checked) .Q-PAGE2__card:not(.quatang) {
   display: none;
 }
 
