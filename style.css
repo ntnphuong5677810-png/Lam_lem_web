@@ -663,16 +663,16 @@ nav a:hover {
 }
 
 .b-tro {
-  background: linear-gradient(160deg, #888175, #706b5f, #a39a8b);
+  background: url("pic/tro.jpg") center / cover no-repeat;
 }
 .b-hoabien {
-  background: linear-gradient(160deg, #68472a, #9b6a37, #2f2015);
+  background: url("pic/hoabien.jpg") center / cover no-repeat;
 }
 .b-hongli {
-  background: linear-gradient(160deg, #edc6ba, #dfa08e);
+  background: url("pic/hongli.jpg") center / cover no-repeat;
 }
 .b-ngoctrai {
-  background: linear-gradient(160deg, #f1e9d8, #dbcaae, #efe6f2);
+  background: url("pic/ngoctrai.jpg") center / cover no-repeat;
 }
 
 .b-men-name {
