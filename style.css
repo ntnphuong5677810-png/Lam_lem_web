@@ -489,6 +489,7 @@ nav a:hover {
 }
 
 .q-page2__cta {
+    font-size: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -498,7 +499,7 @@ nav a:hover {
 }
 
 .q-page2__button2-dark {
-  padding: 10px 12px;
+  padding: 10px 9px;
   border-radius: 999px;
   background-color: var(--clr-ink);
   color: var(--clr-white);
@@ -510,7 +511,7 @@ nav a:hover {
 }
 
 .q-page2__button2-line {
-  padding: 10px 12px;
+  padding: 10px 9px;
   border-radius: 999px;
   border: 1.5px solid var(--clr-accent);
   color: var(--clr-accent);
@@ -1579,11 +1580,6 @@ nav a:hover {
     font-size: 13px;
   }
 
-  .q-page2__cta {
-    flex-direction: column;
-    gap: 8px;
-  }
-
   .q-page2__button2 {
     font-size: 13px;
     text-align: center;
@@ -1682,11 +1678,6 @@ nav a:hover {
   width: auto;
   max-width: 330px;
   height: auto;
-}
-
-.q-page2__cta {
-  flex-wrap: wrap;
-  gap: 8px;
 }
 
 .q-header {
