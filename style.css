@@ -736,7 +736,6 @@ body {
   }
 }
 
-/* ---- Mobile: khôi phục footer 1 cột (khối 900px phía trên ghi đè quy tắc 1fr của khối 640px do nằm sau trong source) ---- */
 @media (max-width: 640px) {
   .footer__grid {
     grid-template-columns: 1fr;
