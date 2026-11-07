@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lấm Lem – Gốm thủ công</title>
+
+  <!-- Font chữ từ Google Fonts: Fraunces (tiêu đề) và Be Vietnam Pro (chữ thường) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+ 
+    body { margin: 0; }
+
+    .b-page,
+    .b-page * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .b-page {
+      font-family: "Be Vietnam Pro", sans-serif;
+      color: #7D6A5C;
+      background: #FAF5EE;
+    }
+
+    
+    /* Lớp NỀN: phủ kín chiều ngang */
+    .b-s2-section {
+      background: #FAF5EE;
+      padding: 84px 20px;
+    }
+
+    /* Hộp NỘI DUNG: căn giữa, ảnh trái - chữ phải */
+    .b-s2-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 58px;
+    }
+
+    .b-s2-photo {
+      width: 540px;
+      height: 553px;
+      flex-shrink: 0;         /* không cho ảnh bị co lại */
+      object-fit: cover;      /* ảnh vừa khung, không bị méo */
+      border-radius: 24px;
+    }
+
+    .b-s2-content {
+      flex: 1;
+    }
+
+    .b-s2-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;   /* viết hoa */
+      color: #B4552D;
+      margin-bottom: 6px;
+    }
+
+    .b-s2-title {
+      font-family: "Fraunces", serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #3B2A20;
+      margin-bottom: 16px;
+    }
+
+    .b-s2-intro {
+      font-size: 16px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .b-s2-step {
+      display: flex;          /* số bên trái, chữ bên phải */
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .b-s2-number {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      background: #B4552D;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 50%;     /* bo thành hình tròn */
+      display: flex;
+      align-items: center;    /* căn số vào giữa hình tròn */
+      justify-content: center;
+    }
+
+    .b-s2-step-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #3B2A20;
+      margin-bottom: 2px;
+    }
+
+    .b-s2-step-text {
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+
+    /* =================================
+       SLIDE 1 - MEN NÀO, RA GỐM NẤY
+    ================================= */
+
+    .b-s1-section {
+      background: #FAF5EE;
+      padding: 84px 20px;
+    }
+
+    .b-s1-container {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .b-s1-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #B4552D;
+      margin-bottom: 8px;
+    }
+
+    .b-s1-title {
+      font-family: "Fraunces", serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #3B2A20;
+      margin-bottom: 12px;
+    }
+
+    .b-s1-intro {
+      font-size: 16px;
+      line-height: 1.65;
+      max-width: 690px;
+    }
+
+    /* --- 4 thẻ men --- */
+    .b-s1-men-list {
+      display: flex;
+      gap: 22px;
+      margin-top: 46px;
+    }
+
+    .b-s1-men-card {
+      flex: 1;
+      background: #FFFFFF;
+      border: 1px solid #E5D7C6;
+      border-radius: 20px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .b-s1-men-color {
+      height: 74px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+    .b-s1-tro      { background: linear-gradient(160deg, #888175, #706B5F, #A39A8B); }
+    .b-s1-hoabien  { background: linear-gradient(160deg, #68472A, #9B6A37, #2F2015); }
+    .b-s1-hongli   { background: linear-gradient(160deg, #EDC6BA, #DFA08E); }
+    .b-s1-ngoctrai { background: linear-gradient(160deg, #F1E9D8, #DBCAAE, #EFE6F2); }
+
+    .b-s1-men-name {
+      font-family: "Fraunces", serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #3B2A20;
+      margin-bottom: 6px;
+    }
+
+    .b-s1-men-text {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .b-s1-tag {
+      margin-top: auto;        /* đẩy xuống đáy thẻ */
+      padding-top: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.65;
+      color: #8A3E1F;
+    }
+
+    /* --- Chọn theo gu --- */
+    .b-s1-gu-heading {
+      font-family: "Fraunces", serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #3B2A20;
+      margin-top: 52px;
+      margin-bottom: 22px;
+    }
+
+    .b-s1-gu-list {
+      display: flex;
+      gap: 22px;
+    }
+
+    .b-s1-gu-card {
+      flex: 1;
+      background: #F3EADB;
+      border-radius: 20px;
+      padding: 24px 26px;
+    }
+
+    .b-s1-gu-name {
+      font-family: "Fraunces", serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #3B2A20;
+      margin-bottom: 8px;
+    }
+
+    .b-s1-gu-text {
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    .b-s1-gu-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: #B4552D;
+      text-decoration: none;   /* bỏ gạch chân */
+    }
+
+    /* --- Khung liên hệ --- */
+    .b-s1-contact {
+      background: #3B2A20;
+      border-radius: 24px;
+      padding: 28px 35px;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;   /* chữ bên trái, nút bên phải */
+      align-items: center;
+    }
+
+    .b-s1-contact-title {
+      font-family: "Fraunces", serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #FBF1E5;
+      margin-bottom: 4px;
+    }
+
+    .b-s1-contact-text {
+      font-size: 14px;
+      color: #D9C4AE;
+    }
+
+    .b-s1-button {
+      background: #FBF1E5;
+      color: #8A3E1F;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 15px 29px;
+      border-radius: 999px;    /* bo tròn hoàn toàn */
+    }
+
+
+    /* =================================
+       SLIDE 3 - TRẢI NGHIỆM TẠI XƯỞNG
+    ================================= */
+
+    /* Nền nâu đỏ chuyển sắc, phủ kín chiều ngang */
+    .b-s3-section {
+      background: linear-gradient(to bottom right, #8A3E1F, #6E3016);
+      padding: 84px 20px;
+      color: #F3DFCB;
+    }
+
+    .b-s3-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;   /* 2 cột cùng bắt đầu từ trên */
+      gap: 60px;
+    }
+
+    .b-s3-content {
+      flex: 1;
+    }
+
+    .b-s3-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #F2B98A;
+      margin-bottom: 6px;
+    }
+
+    .b-s3-title {
+      font-family: "Fraunces", serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #FBF1E5;
+      margin-bottom: 18px;
+    }
+
+    .b-s3-intro {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .b-s3-list {
+      list-style: none;          /* bỏ chấm tròn mặc định */
+      padding: 0;
+      margin-bottom: 28px;
+    }
+
+    .b-s3-item {
+      position: relative;
+      padding-left: 19px;        /* chừa chỗ cho chấm tròn */
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    /* Chấm tròn cam nhạt tự vẽ bằng ::before */
+    .b-s3-item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      background: #F2B98A;
+      border-radius: 50%;
+    }
+
+    .b-s3-label {
+      font-weight: 600;
+      color: #FBF1E5;
+    }
+
+    .b-s3-button {
+      display: inline-block;
+      background: #FBF1E5;
+      color: #8A3E1F;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 15px 29px;
+      border-radius: 999px;
+    }
+
+    .b-s3-photo {
+      width: 540px;
+      height: 338px;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="b-page">
+
+    <!-- =============== SLIDE 2: QUY TRÌNH CHẾ TÁC =============== -->
+    <section class="b-s2-section">
+      <div class="b-s2-container">
+
+        <!-- Ảnh bên trái -->
+        <img class="b-s2-photo" src="./anh4.png" alt="Đĩa gốm chưa tráng men có khắc hình cú">
+
+        <!-- Chữ bên phải -->
+        <div class="b-s2-content">
+
+          <p class="b-s2-eyebrow">Quy trình chế tác</p>
+          <h2 class="b-s2-title">7–10 ngày cho một chiếc gốm</h2>
+          <p class="b-s2-intro">
+            Lấm Lem là xưởng nhỏ thành lập từ năm 2019, do nghệ nhân trẻ sáng lập với mong muốn đưa gốm thủ công Việt đến gần căn bếp và góc nhà của người trẻ. Mỗi sản phẩm đều đi qua đủ 5 công đoạn:
+          </p>
+
+          <div class="b-s2-step">
+            <div class="b-s2-number">1</div>
+            <div>
+              <h3 class="b-s2-step-title">Chọn và nhào đất</h3>
+              <p class="b-s2-step-text">Đất sét được lọc sạch tạp chất, nhào kỹ để hết bọt khí — bước quyết định độ bền của gốm.</p>
+            </div>
+          </div>
+
+          <div class="b-s2-step">
+            <div class="b-s2-number">2</div>
+            <div>
+              <h3 class="b-s2-step-title">Tạo hình trên bàn xoay</h3>
+              <p class="b-s2-step-text">Người thợ nặn từng chiếc một. Không khuôn đúc hàng loạt, không hai chiếc nào giống hệt nhau.</p>
+            </div>
+          </div>
+
+          <div class="b-s2-step">
+            <div class="b-s2-number">3</div>
+            <div>
+              <h3 class="b-s2-step-title">Phơi khô và tỉa sửa</h3>
+              <p class="b-s2-step-text">Phơi tự nhiên 2–3 ngày rồi tỉa lại đáy, miệng và quai cho cân đối, êm tay.</p>
+            </div>
+          </div>
+
+          <div class="b-s2-step">
+            <div class="b-s2-number">4</div>
+            <div>
+              <h3 class="b-s2-step-title">Nung sơ ở 900°C</h3>
+              <p class="b-s2-step-text">Lần nung đầu giúp gốm cứng lại để chuẩn bị phủ men.</p>
+            </div>
+          </div>
+
+          <div class="b-s2-step">
+            <div class="b-s2-number">5</div>
+            <div>
+              <h3 class="b-s2-step-title">Phủ men và nung 1.280°C</h3>
+              <p class="b-s2-step-text">Lần nung quyết định màu men và độ bền. Men đạt độ chín, an toàn cho thực phẩm.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =============== SLIDE 1: MEN NÀO, RA GỐM NẤY =============== -->
+    <section class="b-s1-section">
+      <div class="b-s1-container">
+
+        <p class="b-s1-eyebrow">Tìm hiểu trước khi chọn</p>
+        <h2 class="b-s1-title">Men nào, ra gốm nấy</h2>
+        <p class="b-s1-intro">
+          Mỗi loại men cho một kết quả khác hẳn sau khi nung. Xem nhanh 1 phút để chọn đúng gu — khỏi cần tới tận xưởng.
+        </p>
+
+        <!-- 4 thẻ men -->
+        <div class="b-s1-men-list">
+
+          <div class="b-s1-men-card">
+            <div class="b-s1-men-color b-s1-tro"></div>
+            <h3 class="b-s1-men-name">Men tro</h3>
+            <p class="b-s1-men-text">Ra lò: xám mờ, điểm vân tro tự nhiên, bề mặt lì và hơi sần tay.</p>
+            <p class="b-s1-tag">Ví dụ: Cốc Táo Đỏ, lớp sáng Thứ 7...</p>
+          </div>
+
+          <div class="b-s1-men-card">
+            <div class="b-s1-men-color b-s1-hoabien"></div>
+            <h3 class="b-s1-men-name">Men hỏa biến</h3>
+            <p class="b-s1-men-text">Ra lò: màu loang theo lửa nung — nâu, vàng, đen trộn nhau, không đoán trước được.</p>
+            <p class="b-s1-tag">Hợp gu cá tính, hoài cổ · Có ở: Bình hoa men hỏa biến</p>
+          </div>
+
+          <div class="b-s1-men-card">
+            <div class="b-s1-men-color b-s1-hongli"></div>
+            <h3 class="b-s1-men-name">Men hồng lì</h3>
+            <p class="b-s1-men-text">Ra lò: hồng phấn mịn, lì, nhẹ nhàng — lên hình rất sáng và sạch.</p>
+            <p class="b-s1-tag">Hợp gu trẻ trung, làm quà · Có ở: Bộ cốc hồng phấn</p>
+          </div>
+
+          <div class="b-s1-men-card">
+            <div class="b-s1-men-color b-s1-ngoctrai"></div>
+            <h3 class="b-s1-men-name">Men ngọc trai</h3>
+            <p class="b-s1-men-text">Ra lò: ánh xà cừ nhẹ, bóng mượt, nhìn sang — hợp làm điểm nhấn trong nhà.</p>
+            <p class="b-s1-tag">Hợp gu tinh tế, trang trí · Có ở: Bình đắp nổi “Vườn Xuân”</p>
+          </div>
+
+        </div>
+
+        <!-- Chọn theo gu -->
+        <h3 class="b-s1-gu-heading">Chưa biết mình hợp phong cách nào? Chọn theo gu:</h3>
+
+        <div class="b-s1-gu-list">
+
+          <div class="b-s1-gu-card">
+            <h4 class="b-s1-gu-name">Mộc &amp; tối giản</h4>
+            <p class="b-s1-gu-text">Ít chi tiết, tông đất, men lì. Gợi ý: Bình mộc men lì, Bộ cốc men tro xám.</p>
+            <a class="b-s1-gu-link" href="#">Xem sản phẩm gợi ý</a>
+          </div>
+
+          <div class="b-s1-gu-card">
+            <h4 class="b-s1-gu-name">Ấm cúng &amp; hoài cổ</h4>
+            <p class="b-s1-gu-text">Men loang lửa, tông nâu ấm. Gợi ý: Bình hoa men hỏa biến, Set 4 cốc “Sắc Đất”.</p>
+            <a class="b-s1-gu-link" href="#">Xem sản phẩm gợi ý</a>
+          </div>
+
+          <div class="b-s1-gu-card">
+            <h4 class="b-s1-gu-name">Trẻ trung &amp; nổi bật</h4>
+            <p class="b-s1-gu-text">Màu tươi, họa tiết vui mắt. Gợi ý: Bộ cốc hồng phấn, Cốc họa tiết vẽ tay.</p>
+            <a class="b-s1-gu-link" href="#">Xem sản phẩm gợi ý</a>
+          </div>
+
+        </div>
+
+        <!-- Khung liên hệ -->
+        <div class="b-s1-contact">
+          <div>
+            <h3 class="b-s1-contact-title">Vẫn chưa chắc men nào hợp với bạn?</h3>
+            <p class="b-s1-contact-text">Gọi cho xưởng — người thợ tư vấn trực tiếp, miễn phí, 8:30–19:00 mỗi ngày.</p>
+          </div>
+          <a class="b-s1-button" href="#">Liên hệ ngay</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =============== SLIDE 3: TRẢI NGHIỆM TẠI XƯỞNG =============== -->
+    <section class="b-s3-section">
+      <div class="b-s3-container">
+
+        <!-- Chữ bên trái -->
+        <div class="b-s3-content">
+
+          <p class="b-s3-eyebrow">Trải nghiệm tại xưởng</p>
+          <h2 class="b-s3-title">Tự tay nặn nên chiếc gốm đầu tiên của bạn</h2>
+          <p class="b-s3-intro">
+            Chưa từng chạm vào đất sét cũng không sao. Trong 2 giờ tại xưởng, bạn được ngồi vào bàn xoay, tự tay nặn, tạo dáng và chọn men cho một sản phẩm của riêng mình — người thợ của Lấm Lem kèm bên cạnh từ bước đầu tiên đến khi ra lò.
+          </p>
+
+          <ul class="b-s3-list">
+            <li class="b-s3-item">
+              <span class="b-s3-label">Lịch lớp:</span> Thứ 7 và Chủ nhật hằng tuần — ca sáng 9:00 hoặc ca chiều 14:30
+            </li>
+            <li class="b-s3-item">
+              <span class="b-s3-label">Thời lượng:</span> 2 giờ/buổi, tối đa 8 học viên để ai cũng được kèm sát
+            </li>
+            <li class="b-s3-item">
+              <span class="b-s3-label">Học phí:</span> 350.000đ/người, đã gồm đất, men, công nung và phí giao sản phẩm về tận nhà
+            </li>
+            <li class="b-s3-item">
+              <span class="b-s3-label">Thành phẩm:</span> xưởng nung hoàn thiện trong 7–10 ngày và gửi ảnh xác nhận trước khi giao
+            </li>
+          </ul>
+
+          <a class="b-s3-button" href="#">Đặt lịch ngay</a>
+
+        </div>
+
+        <!-- Ảnh bên phải -->
+        <img class="b-s3-photo" src="./anh5.png" alt="Các món gốm nặn tay chưa tráng men trên bàn">
+
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
