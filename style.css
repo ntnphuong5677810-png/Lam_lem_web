@@ -241,7 +241,8 @@ nav a:hover {
 }
 
 .q-hero__button-line:hover {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-ink);
+  border: var(--clr-ink);
   color: var(--clr-white);
   transition: 0.2s;
 }
