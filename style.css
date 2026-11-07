@@ -36,7 +36,6 @@ body {
   background: var(--clr-page);
   color: var(--clr-ink);
   font-family: var(--font-sans);
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -77,6 +76,10 @@ body {
   gap: 10px;
 }
 
+.q-header__left {
+    text-decoration: none;
+}
+
 .q-header__logo {
   width: 42px;
   height: 42px;
@@ -86,6 +89,7 @@ body {
 
 .q-header__text {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -164,7 +168,7 @@ nav a:hover {
 }
 
 .q-header__shop:hover {
-  background-color: var(--clr-beige);
+  background-color: var(--clr-line);
   transition: 0.2s;
 }
 
@@ -1329,7 +1333,6 @@ nav a:hover {
   margin-top: 0.3rem;
 }
 .footer__brand{
-    width: 384.16px;
     height: 128px;
     display: flex;
     flex-direction: column;
